@@ -15,11 +15,11 @@ $ source .venv/bin/activate
 $ pip install -r requirements.txt
 ```
 
-For [whisper](https://github.com/openai/whisper) installation, use 'pip install git+https://github.com/openai/whisper.git` instead of `pip install whisper`.
+For [whisper](https://github.com/openai/whisper) installation, use `pip install git+https://github.com/openai/whisper.git` instead of `pip install whisper`.
 
 2. Create a free Pinecone account and get your API key from [here](https://www.pinecone.io/).
-   If you don't have choice for regin setting, we probably same using Iowa, US. <br>
-   So PINECONE_API_ENV="us-central1-gcp"
+   If you don't have choice for regin setting, we are probably same using Iowa, US. <br>
+   So here is setting `PINECONE_API_ENV="us-central1-gcp"`
 
 3. Create a `.env` file with the following variables:
 
@@ -33,7 +33,7 @@ PINECONE_API_ENV = [ENTER YOUR PINECONE API ENVIRONMENT HERE]
    I did report issue in Author's github, [HERE](https://github.com/svpino/youtube-rag/issues/2).
    Instead of using PineconeVectorStore, got unAuth error, I use Pinecone directly.
 
-````Py
+```Py
 from langchain_pinecone import Pinecone
 
 import os
@@ -42,7 +42,7 @@ index_name = "youtube-index"
 
 pinecone = Pinecone.from_documents( index_name = index_name,
                                     documents = documents,
-                                    embedding = embeddings)```
-````
+                                    embedding = embeddings)
+```
 
 ## 💖 Conclusion, this is good tutorial for star learnning Langchain whisper, audio transcription, and RAG. I enjoy it.
