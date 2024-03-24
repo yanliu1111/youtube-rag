@@ -15,6 +15,8 @@ $ source .venv/bin/activate
 $ pip install -r requirements.txt
 ```
 
+For [whisper](https://github.com/openai/whisper) installation, use 'pip install git+https://github.com/openai/whisper.git` instead of `pip install whisper`.
+
 2. Create a free Pinecone account and get your API key from [here](https://www.pinecone.io/).
    If you don't have choice for regin setting, we probably same using Iowa, US. <br>
    So PINECONE_API_ENV="us-central1-gcp"
