@@ -45,4 +45,4 @@ pinecone = Pinecone.from_documents( index_name = index_name,
                                     embedding = embeddings)
 ```
 
-## 💖 Conclusion, this is good tutorial for star learnning Langchain whisper, audio transcription, and RAG. I enjoy it.
+## 💖 Conclusion, this is good tutorial for start learnning Langchain whisper, audio transcription, and RAG. I recommend it.
