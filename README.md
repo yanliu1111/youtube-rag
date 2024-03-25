@@ -4,6 +4,15 @@ This is a step-by-step guide to building a simple RAG (Retrieval-Augmented Gener
 
 Training Video [HERE](https://www.youtube.com/watch?v=BrsocJb-fAo&t=2098s&ab_channel=Underfitted)
 
+## Tech Stack
+
+- OpenAI
+- Langchain
+- openai-whisper
+- scikit-learn
+- langchain-pinecone (Vector Store)
+- colab
+
 ## Setup
 
 1. In this tutorial, use `in-memory vector store`, which needs extra installation `pip install "langchain[docarray]"` and `Get it with "Microsoft C++ Build Tools": https://visualstudio.microsoft.com/visual-cpp-build-tools/` which I didn't follow, I skip this part and directly use pinecone instead.
